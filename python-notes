@@ -1,4 +1,4 @@
-Q) Counting Digits, Letters, and Spaces in a String
+1) Counting Digits, Letters, and Spaces in a String
 text = "python 3.10 is awesome 2025!"
 letters = 0
 digits = 0
@@ -14,7 +14,18 @@ for char in text:
 print(f"Letter : {letters}")
 print(f"Digits : {digits}")
 print(f"Spaces : {spaces}")
-#===OUTPUT===
+===OUTPUT===
 Letter : 15
 Digits : 7
 Spaces : 4
+-----------------------------------------------------------------------------------------------------------------------------
+2)Counting Special Characters in a String.
+text = "Hello! Welcome to @Python3. Have a #great day :)"
+special_count = 0
+for char in text:
+    if not char.isalnum() and not char.isspace():
+        special_count += 1
+print(f"Number of Character is: {special_count}")
+===OUTPUT===
+Number of Character is: 6
+------------------------------------------------------------------------------------------------------------------------------
