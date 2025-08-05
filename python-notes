@@ -1,1 +1,20 @@
+Q) Counting Digits, Letters, and Spaces in a String
+text = "python 3.10 is awesome 2025!"
+letters = 0
+digits = 0
+spaces = 0
 
+for char in text:
+    if char.isdigit():  # checks char is in digit(0-9)
+        digits += 1
+    elif char.isalpha(): # checks char is a letter(a-z or A-Z)
+        letters += 1
+    elif char.isspace(): # checks char is space, tab, newline
+        spaces += 1
+print(f"Letter : {letters}")
+print(f"Digits : {digits}")
+print(f"Spaces : {spaces}")
+#===OUTPUT===
+Letter : 15
+Digits : 7
+Spaces : 4
